@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Side Memo",
+  "version": "1.0.0",
+  "description": "サイドパネルでメモが取れるChrome拡張機能",
+  "permissions": ["storage", "sidePanel"],
+  "side_panel": {
+    "default_path": "src/sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Side Memo"
+  }
+}
